@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Chat</title>
+        <script src="http://localhost:8081/socket.io/socket.io.js"></script>
+        <link rel="stylesheet" href="/public/style.css"/>
+    </head>
+    <body>
+
+        <link rel="stylesheet" href="/public/style.css" />
+
+        <div class="chat-wrap">
+
+            <div class="topbar">
+                <div class="badge" id="welcome">Welcome</div>
+                <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+            </div>
+
+            <div class="row-space">
+                <h3 style="margin: 0;">Room: <span id="roomName">-</span></h3>
+
+                <div class="row">
+                    <select id="roomSelect" class="input" style="width: 220px;"></select>
+                    <button id="joinBtn" class="btn btn-primary">Join</button>
+                    <button id="leaveBtn" class="btn btn-secondary">Leave Room</button>
+                </div>            
+            </div>
+
+            
+
+            <div id="messages" class="messages"></div>
+
+            <div class="row" style="margin-top: 12px;">
+                <input id="msgInput" class="input" placeholder="Type your message..." />
+                <button id="sendBtn" class="btn btn-primary">Send</button>
+            </div>
+
+            <hr/>
+
+            <div class="section-title">Private Chat</div>
+
+            <input id="toUser" class="input" placeholder="To username" />
+            <div id="typing" class="typing"></div>
+
+            <div class="row">
+                <input id="privateInput" class="input" placeholder="Private message..." />
+                <button id="sendPrivateBtn" class="btn btn-primary">Send Private</button>
+            </div>
+        </div>
+        
+
+        <script src="/public/client.js"></script>
+
+    </body>
+</html>

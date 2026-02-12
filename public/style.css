@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    background: #f4f6f9;
+    padding: 30px;
+    color: #222;
+}
+
+a{
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.card{
+    max-width: 520px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card h2{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+
+
+.input{
+    width: 100%;
+    padding: 10px 12px;
+    margin: 8px 0;
+    border: 1px solid #cfd6df;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input:focus{
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.btn{
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-primary{
+    background: #2563eb;
+    color: white;
+}
+
+.btn-primary:hover{
+    background: #1d4ed8;
+}
+
+.btn-secondary{
+    background: #e5e7eb;
+    color: #111;
+}
+.btn-secondary:hover{
+    background: #d1d5db;
+}
+
+.row{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.row-space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Chat page */
+.chat-wrap{
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.badge{
+    background: #eef2ff;
+    color: #3730a3;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+}
+
+.messages{
+    height: 320px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 12px;
+    overflow-y: auto;
+    background: #fafafa;
+    margin-top: 12px;
+}
+
+.msg{
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: white;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.section-title{
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.typing{
+    color: #6b7280;
+    font-size: 13px;
+    margin: 6px 0 10px;
+}
+
+select.input{
+    background: white;
+}
